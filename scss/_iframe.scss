@@ -1,0 +1,11 @@
+@import "./_mixins.scss";
+iframe {
+    position: relative;
+    top: 20px;
+
+    @include atMedium {
+        height: 400px;
+        max-width: 900px;
+    }
+    
+}

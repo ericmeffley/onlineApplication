@@ -1,0 +1,155 @@
+@import "./_mixins.scss";
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: rgba(40, 51, 106, 0.15);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rokkitt', serif;
+    font-weight: 300;
+}
+.error{
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: rgb(214, 96, 108);
+    padding: 10px 20px; 
+    border-radius: 10px;
+    margin: 25px auto;
+}
+
+.success {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: rgb(110, 214, 96);
+    padding: 10px 20px; 
+    border-radius: 10px;
+    margin: 25px auto;
+}
+.five-hundred{
+    font-weight: 500;
+}
+
+p {
+    font-size: 1.3rem;
+}
+
+.blue{
+    color: $blue;
+}
+
+.red {
+    color: $red;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    padding-left: 10px;
+}
+
+.clear {
+    clear:both;
+}
+
+.container {
+    width: 100%;
+
+    @include atMedium {
+        width: 95%;
+        max-width: 1000px;
+        margin: auto;
+    }
+}
+
+.main {
+    float: left;
+
+    @include atMedium {
+        width: 70%;
+        margin: 0;
+    }
+
+}
+        
+a {
+    text-decoration: none;
+}
+
+hr {
+    border: solid 1px rgb(220, 220, 220);
+}
+.page-wrapper {
+    margin: 0;
+    padding: 0 10px;
+}
+
+.page-title {
+    text-align:center;
+    color:#A6252D;
+    font-size: 2.5rem;
+    font-weight: 500;
+    letter-spacing: .01rem;
+    padding: 10px 0;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+.page-sub-title {
+    text-align:center;
+    font-style: italic;
+    font-weight: 400;
+    position:relative;
+    top:-20px;
+}
+
+.intro-wrapper {
+    padding: 10px 30px;
+    width: 100%;
+    background-color:#28336A;
+
+    @include atMedium {
+
+        display: block;
+        max-width: 900px;
+    }
+}
+
+.intro-img {
+    width: 125px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.intro-text {
+    color: white;
+    letter-spacing: .1rem;
+    font-weight: 300;
+}
+
+.small-text {
+    font-size: .9rem;
+    font-style: italic;
+    color: rgba(0, 0, 0, .7)
+}
+
+ol{
+    font-size:1.2rem;
+}
+
+@include atMedium {
+    .wrapper-address {
+        height: 475px;
+    }
+
+    .wrapper-email {
+        height: 100px;
+    }
+}
